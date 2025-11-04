@@ -17,7 +17,9 @@ class Button:
         self.rect.center = (self.positions[pos],h)
 
     def _prep_msg(self, msg, pos):
-        self.msg_image = self.font.render(msg, True, self.text_color, self.button_color)
+        self.msg_image = self.font.render(
+            msg, True, self.text_color, self.button_color
+        )
         self.msg_image_rect = self.msg_image.get_rect()
         self.msg_image_rect.center = pos
     
